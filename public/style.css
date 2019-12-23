@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy|Mukta+Mahee|Signika&display=swap');
+
+body {
+    background-image: url('./images/backgroundSite.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-family: 'Lakki Reddy', cursive;
+    font-family: 'Signika', sans-serif;
+    overflow: hidden;
+}
+  
+.navigation a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: initial;
+    font-size: 17px;
+}
+  
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  
+.navigation .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 1089px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 1089px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+  
+#name {
+    font-weight:100;
+    color: rgb(56, 218, 56);
+    text-align: center;
+    padding: 23px;
+    width: 101%;
+    text-transform: uppercase;
+}
+
+.presentation-content {
+    text-align: justify;
+    color: rgb(56, 218, 56);
+    text-align: center;
+    width: 108%;
+    font-size: x-large;
+}
+
+.information {
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width:500px;
+    height:200px;
+    background:#000;
+    float:left;
+    border:2px solid #000;
+    outline: 1px dashed #fff;
+    outline-offset: -10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-github {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.center {
+    display: table;
+    width: 100%;
+    height: 90vh;
+}
+  
+#social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social {
+      padding-left: 0px;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social li a {
+    border-radius: 2px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.fa fa-github {
+    background-color: white;
+}
+
+.credits, .credits a {
+    font-size: 20px;
+    font-family: Open Sans;
+}

@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yordan Dobrev - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navigation" id="presentation">
+            <ul>
+                <li>
+                    <a href="about.html">About me</a>
+                </li>
+        
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+        
+                <li>
+                    <a href="#">Education</a>
+                </li>
+        
+                <a href="javascript:void(0);" class="icon" onclick="responsive()"><i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </div>
+    </header>
+        
+    <div id="body-content">
+        <h1 id="name">I Am Yordan Dobrev </h1>
+
+        <p id="content">
+            <div class="presentation-content">
+                I am student at Software University from 2018. 
+            </div>
+        
+            <div class="presentation-content">
+                At SoftUni, the main technologies I study are C# and JavaScript. 
+            </div>
+        </p>
+    </div>
+    
+    <footer>
+        <div class="center">
+            <div id="social-test">
+                <ul class="social">
+                    <li><a target="_blank" href="https://www.facebook.com/dani.todorov.395"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/YordanDobrev97"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+
+    <script>
+        function loadAboutPage() {
+            $('#about').load('about.html');
+        }
+
+        function responsive() {
+            const id = document.getElementById("#presentation");
+            if (id.className === "navigation") {
+               id.className += " responsive";
+            } else {
+              id.className = "navigation";
+            }
+        }
+    </script>
+</body>
+</html>
