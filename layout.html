@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Yordan Dobrev</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body onload="loadHomePage()">
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                    <button class="btn btn-link" role="link" type="submit" onclick="loadHomePage()">About me</button>
+                </li>
+                <li>
+                    <button class="btn btn-link" role="link" type="submit" onclick="loadProjectsPage()">Project</button>
+                </li>
+                <li>
+                    <button class="btn btn-link" role="link" type="submit" onclick="loadEducationPage()">
+                        Education
+                    </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <div id="body"></div>
+    
+    <script>
+        function loadHomePage()  {
+            $('#body').load('./about.html');
+        }
+
+        function loadProjectsPage() {
+            $('#body').load('./projects.html');
+        }
+        
+        function loadEducationPage() {
+            $('#body').load('./education.html');
+        }
+    </script>
+    <footer class="page-footer font-small blue pt-4">
+        <div class="footer-copyright text-center py-3">© 2019 Resume
+            <li><a target="_blank" href="https://www.facebook.com/dani.todorov.395"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+            <li><a target="_blank" href="https://github.com/YordanDobrev97"><i class="fa fa-github" aria-hidden="true">Github</a></i></li>
+        </div>
+      </footer> 
+</body>
+</html>

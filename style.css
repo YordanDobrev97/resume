@@ -1,0 +1,54 @@
+body {
+    background-color:#333333;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.self-information {
+    margin-top: 118px;
+    margin-bottom: -9rem;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2.55rem;
+    font-weight: 300;
+}
+
+.information {
+    margin-left: 90px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+img {
+    display: block;
+    margin-left: 26em;
+    margin-right: auto;
+    width: 40%;
+    height: 51%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
