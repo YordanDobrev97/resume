@@ -1,53 +1,41 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Yordan Dobrev</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body onload="loadHomePage()">
-    <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                    <button class="btn btn-link" role="link" type="submit" onclick="loadHomePage()">About me</button>
-                </li>
-                <li>
-                    <button class="btn btn-link" role="link" type="submit" onclick="loadProjectsPage()">Project</button>
-                </li>
-                <li>
-                    <button class="btn btn-link" role="link" type="submit" onclick="loadEducationPage()">
-                        Education
-                    </button>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  </head>
+  <body onload="loadHomePage()">
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li><a href="index.html">За Мен</a></li>
+          <li><a href="#" class="education">Образование</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <div id="body"></div>
-    
+    <main id="main">
+      <h1>Йордан Добрев</h1>
+      <p>От град Радомир съм, на 20 години и уча в СофтУни</p>
+      <p>
+        Започнах сам вкъщи да уча програмиране, защото ми беше интересно и бях
+        нетърпелив, за да изчакам да завърша училище. В СофтУни се справям много
+        добре, успявам да подържам отличен успех.
+      </p>
+
+      <div>
+        <img src="/images/with_Nakov.png" />
+      </div>
+    </main>
     <script>
-        function loadHomePage()  {
-            $('#body').load('./about.html');
-        }
-
-        function loadProjectsPage() {
-            $('#body').load('./projects.html');
-        }
-        
-        function loadEducationPage() {
-            $('#body').load('./education.html');
-        }
+        $('.education').on('click', () => {
+            $('#main').load('education.html');
+        })
     </script>
-    <footer class="page-footer font-small blue pt-4">
-        <div class="footer-copyright text-center py-3">© 2019 Resume
-            <li><a target="_blank" href="https://www.facebook.com/dani.todorov.395"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-            <li><a target="_blank" href="https://github.com/YordanDobrev97"><i class="fa fa-github" aria-hidden="true">Github</a></i></li>
-        </div>
-      </footer> 
-</body>
+  </body>
 </html>

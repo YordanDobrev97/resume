@@ -1,58 +1,69 @@
 body {
-    background-color:#333333;
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #513029;
+    font-size: 25px;
+}
+
+.nav-container ul > li {
+    display: inline;
+}
+.nav-container li > a {
+    padding: 15px;
+}
+.nav-container{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px #333333;
+}
+nav a:hover {
+    background-color: rgb(190, 122, 73);
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
 }
 
 h1 {
-    color: white;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.self-information {
-    margin-top: 118px;
-    margin-bottom: -9rem;
-    color: white;
     text-align: center;
-    font-size: medium;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 2.55rem;
-    font-weight: 300;
+    color: aliceblue;
+    margin-top: 35px;
 }
 
-.information {
-    margin-left: 90px;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+p{
+    text-align: center;
+    width: 780px;
+    padding-left: 300px;
+    color: wheat;
 }
 
 img {
     display: block;
-    margin-left: 26em;
+    margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    height: 51%;
+    width: 230px;
+    border-radius: 50%;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
+#education ul > li {
+    margin: 0px;
+    padding-top: 50px;
     text-align: center;
-    font-size: medium;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    h1, p {
+        font-size: 80px;
+        padding-left: 52px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav, h1, p {
+        font-size: 80px;
+        padding-left: 52px;
+    }
 }
