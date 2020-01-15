@@ -1,1 +1,1 @@
-My CV written on HTML, CSS and JavaScript
+My CV written on HTML and CSS
