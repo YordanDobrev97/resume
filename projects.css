@@ -1,11 +1,30 @@
-img {
-    display: block;
-    margin-left: 26em;
-    margin-right: auto;
-    width: 40%;
-    height: 51%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.container-projects {
-    width: 52em;
+#projects {
+    text-align: center;
+}
+
+img {
+    border-radius: 0%;
+    padding-top: 15px;
+    padding-left: 65px;
+    width: 240px;
+    height: 190px;
+}
+
+.column a{
+    display: inline-block;
+    padding-left: 90px;
+}
+
+h2 {
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
 }
