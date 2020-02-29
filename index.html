@@ -1,43 +1,42 @@
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Yordan Dobrev</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  </head>
-  <body onload="loadHomePage()">
-    <nav>
-      <div class="nav-container">
-        <ul>
-          <li><a href="index.html">За Мен</a></li>
-          <li><a href="#" class="portfolio">Портфолио</a></li>
-          <li><a href="#" class="contacts">Контакти</a></li>
-        </ul>
+</head>
+<body>
+    <header class="site-header">
+      <img src="https://images.unsplash.com/photo-1580557716862-8e307f33b6a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+      <div class="site-container">
+        <nav>
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h2>Junior JavaScript Web Developer</h2>
+        <h1>Yordan Dobrev</h1>
       </div>
-    </nav>
+    </header>
 
-    <main id="main">
-      <h1>Йордан Добрев</h1>
-      <p>Роден съм в гр.Радомир</p>
-      <p>Започнах да уча програмиране сам вкъщи, защото ми беше интересно.</p>
-      <p>Първият език с който започнах беше C#, в последствие преминах към JavaScript и супер много ми хареса неговата динамичност.</p>
-      <p>В свободното си време уча Python, много приятен и интуитивен език е и това ми допада адски много.</p>
+    <main>
+      <div class="about-container">
+        <h3>About Me</h3>
+
+        <div class="about-information-container">
+          <p>I started programming at school on my own initiative.</p>
+          <p>I have experience with C#, but my main focus is on <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong></p>
+        </div>
+      </div>
     </main>
-
-    <footer>
-
-    </footer>
-    
-    <script>
-        $('.portfolio').on('click', () => {
-            $('#main').load('projects.html');
-        })
-
-        $('.contacts').on('click', () => {
-          $('#main').load('contacts.html');
-        });
-    </script>
-  </body>
+</body>
 </html>
