@@ -10110,6 +10110,30 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+.certificate {
+  margin-top: 40px
+}
+
+@media screen and (max-width: 360px) {
+  h1{
+      font-size:18px;
+  }
+  .fixed-top {
+    width: 350px;
+  }
+
+  h2, .h2 {
+    font-size: 2.5rem;
+  }
+  .fa-ul {
+    margin-left: 16px;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
