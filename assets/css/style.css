@@ -153,6 +153,18 @@ a:hover {
   margin: 24px auto;
 }
 
+#projects-wrapper {
+  display: flex;
+}
+
+.project-card {
+  margin: 15px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
 @media screen and (max-width: 900px) {
   #menu {
     width: 90%;
@@ -180,6 +192,19 @@ a:hover {
     text-align: center;
     margin: 20px 0;
   }
+}
+
+#projects {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.projects-title {
+  width: 65%;
+  margin: auto;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 480px) {
@@ -225,5 +250,9 @@ a:hover {
   .description {
     max-width: 75%;
     font-size: 22px;
+  }
+
+  #projects-wrapper {
+    flex-direction: column;
   }
 }
