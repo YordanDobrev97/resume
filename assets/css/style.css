@@ -126,10 +126,31 @@ a:hover {
   justify-content: space-around;
   position: relative;
   top: 30px;
+  
 }
 
 #experience-mobile {
   display: none;
+}
+
+#about {
+  position: relative;
+  top: 7vh;
+  text-align: center;
+  font-size: 28px;
+}
+
+.about-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid red;
+  width: 65%;
+  margin: auto;
+}
+
+.description {
+  max-width: 51%;
+  font-size: 24px;
+  margin: 24px auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -199,5 +220,10 @@ a:hover {
 
   .menu-item {
     margin-bottom: 15px;
+  }
+
+  .description {
+    max-width: 75%;
+    font-size: 22px;
   }
 }
