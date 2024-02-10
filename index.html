@@ -1,388 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Yordan Dobrev - Web Developer</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yordan Dobrev - FrontEnd Developer</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/metadata.png">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+  <div class="container">
+    <nav id="nav">
+      <button id="burger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul id="menu">
+        <li class="menu-item">
+          <a href="#home">Home</a>
         </li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li class="menu-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact">Contacts</a>
+        </li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
 
-  </header><!-- End Header -->
+    <header id="header">
+      <section id="information">
+        <h1 id="name">Yordan Dobrev</h1>
+        <p id="position">Front End Developer</p>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Yordan Dobrev</h1>
-      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/dani.todorov.395/" target="_blank" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/yordan-t-dobrev-2b1645162/" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I'm Yordan Dobrev 22 years old. I am freelance Developer with Node.js, Express.js, React.js, MongoDB,
-            HTML5, CSS3, SAAS, Bootstrap and e.c</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Web Developer.</h3>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 Feb 1999</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bulgaria, Sofia</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>yordan.19Dobrev@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
+        <section class="social-media">
+          <div class="github">
+            <a href="https://github.com/YordanDobrev97/" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML5 <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/yordan-dobrev/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Express.js <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">React.js <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MongoDB <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+          <div class="email">
+            <a href="">
+              <i class="fa-regular fa-envelope-open"></i>
+            </a>
           </div>
-        </div>
-      </div>
-    </section><!-- End Skills Section -->
+        </section>
+      </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
+      <section id="profile">
+        <img src="./assets/img/1663279301412.jpg"/>
+      </section>
+    </header>
 
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
+    <section id="experience-desktop">
+      <div>1+ years experienced</div>
+      <div>Web development</div>
+      <div>iGaming development</div>
+    </section>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Yordan Dobrev</h4>
-              <p><em>Junior programmer who has little experience on a freelancer. He specializes in web development with
-                  technologies
-                  such as Node.js, Express, MongoDB and React. My experience as a freelancer is with clients from
-                  France</em></p>
-              <ul>
-                <li>0890115644</li>
-                <li>yordan.19Dobrev@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>Full Stack Web Developer</h4>
-              <h5>2020 - Present</h5>
-              <ul>
-                <li>I work with clients from France for their business</li>
-                <li>I communicate with them directly, without freelance platforms</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Resume Section -->
+    <section id="experience-mobile">
+      <div class="experience-item">1+ years experienced</div>
+      <div class="experience-item">Web development</div>
+      <div class="experience-item">iGaming development</div>
+    </section>
+  </div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Public projects</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img
-                src="https://user-images.githubusercontent.com/42092212/100554007-8012cc00-329a-11eb-8425-6b1a1a99c3b4.png"
-                class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>UniBook</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="https://i.ibb.co/1bmcMJ4/mon-Artisan-Page.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Mon Artisan</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img
-                src="https://user-images.githubusercontent.com/42092212/110245592-96e94e80-7f6c-11eb-85b8-69aa7fbcbbe9.png"
-                class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Gangstagram</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="https://i.ibb.co/tbfdXTP/newlogo.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Movies</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="https://i.ibb.co/MsgN0vZ/movie-App-Img.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Movie Library</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="https://i.imgur.com/WZLnufW.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>MusicFy</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="https://i.ibb.co/GtDjccG/easybank.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Easybank</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="https://i.ibb.co/Pgj33h1/complex-Forms.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Complex Forms</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>yordan.19Dobrev@gmail.com</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Yordan Dobrev</h3>
-      <div class="copyright">
-        &copy; Copyright <strong></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer>
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script defer src="./assets/js/main.js"></script>
 </body>
-
 </html>
