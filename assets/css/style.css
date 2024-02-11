@@ -165,6 +165,45 @@ a:hover {
   width: 100%;
 }
 
+#contact-section {
+  position: relative;
+  top: 130px;
+  font-size: 32px;
+  text-align: center;
+  padding: 30px;
+}
+
+#contact-title {
+  font-size: 48px;
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.input {
+  padding: 23px;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  background: #031C32;
+  border: 1px solid white;
+}
+
+#send-btn {
+  border-radius: 40px;
+  width: 30%;
+  padding: 20px;
+  border: 1px solid white;
+  background: #031C32;
+  color: white;
+  font-size: 28px;
+}
+
 @media screen and (max-width: 900px) {
   #menu {
     width: 90%;
@@ -254,5 +293,9 @@ a:hover {
 
   #projects-wrapper {
     flex-direction: column;
+  }
+
+  #send-btn {
+    width: 100%;
   }
 }
